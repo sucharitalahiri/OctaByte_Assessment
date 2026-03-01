@@ -1,0 +1,77 @@
+0 verbose cli D:\node.exe D:\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.3
+2 info using node@v22.18.0
+3 silly config load:file:D:\node_modules\npm\npmrc
+4 silly config load:file:D:\c backup\crio\OctaByte\frontend\.npmrc
+5 silly config load:file:C:\Users\HP\.npmrc
+6 silly config load:file:D:\c backup\crio\OctaByte\frontend\%APPDATA%\npm\etc\npmrc
+7 verbose title npm install axios react-table recharts
+8 verbose argv "install" "axios" "react-table" "recharts"
+9 verbose logfile logs-max:10 dir:D:\c backup\crio\OctaByte\frontend\%APPDATA%\npm-cache\_logs\2026-02-28T08_42_27_859Z-
+10 verbose logfile D:\c backup\crio\OctaByte\frontend\%APPDATA%\npm-cache\_logs\2026-02-28T08_42_27_859Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly idealTree buildDeps
+14 silly fetch manifest axios@*
+15 silly packumentCache full:https://registry.npmjs.org/axios cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/npm 557ms
+17 http fetch GET 200 https://registry.npmjs.org/axios 301ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/axios set size:undefined disposed:false
+19 silly fetch manifest react-table@*
+20 silly packumentCache full:https://registry.npmjs.org/react-table cache-miss
+21 http fetch GET 200 https://registry.npmjs.org/react-table 89ms (cache miss)
+22 silly packumentCache full:https://registry.npmjs.org/react-table set size:undefined disposed:false
+23 silly fetch manifest react@19.2.3
+24 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+25 http fetch GET 200 https://registry.npmjs.org/react 159ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+27 silly fetch manifest react@^16.8.3 || ^17.0.0-0 || ^18.0.0
+28 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+29 http cache https://registry.npmjs.org/react 51ms (cache hit)
+30 silly packumentCache full:https://registry.npmjs.org/react set size:6523821 disposed:false
+31 verbose stack Error: unable to resolve dependency tree
+31 verbose stack     at #failPeerConflict (D:\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1363:25)
+31 verbose stack     at #loadPeerSet (D:\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:1329:33)
+31 verbose stack     at async #buildDepStep (D:\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:904:11)
+31 verbose stack     at async Arborist.buildIdealTree (D:\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:181:7)
+31 verbose stack     at async Promise.all (index 1)
+31 verbose stack     at async Arborist.reify (D:\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+31 verbose stack     at async Install.exec (D:\node_modules\npm\lib\commands\install.js:150:5)
+31 verbose stack     at async Npm.exec (D:\node_modules\npm\lib\npm.js:207:9)
+31 verbose stack     at async module.exports (D:\node_modules\npm\lib\cli\entry.js:74:5)
+32 error code ERESOLVE
+33 error ERESOLVE unable to resolve dependency tree
+34 error
+35 error While resolving: frontend@0.1.0
+35 error Found: react@19.2.3[2m[22m
+35 error [2mnode_modules/react[22m
+35 error   react@"19.2.3" from the root project
+35 error
+35 error Could not resolve dependency:
+35 error [95mpeer[39m react@"^16.8.3 || ^17.0.0-0 || ^18.0.0" from react-table@7.8.0[2m[22m
+35 error [2mnode_modules/react-table[22m
+35 error   react-table@"*" from the root project
+35 error
+35 error Fix the upstream dependency conflict, or retry
+35 error this command with --force or --legacy-peer-deps
+35 error to accept an incorrect (and potentially broken) dependency resolution.
+36 error
+36 error
+36 error For a full report see:
+36 error D:\c backup\crio\OctaByte\frontend\%APPDATA%\npm-cache\_logs\2026-02-28T08_42_27_859Z-eresolve-report.txt
+37 silly unfinished npm timer reify 1772268148711
+38 silly unfinished npm timer reify:loadTrees 1772268148712
+39 silly unfinished npm timer idealTree:buildDeps 1772268148961
+40 silly unfinished npm timer idealTree:#root 1772268148962
+41 verbose cwd D:\c backup\crio\OctaByte\frontend
+42 verbose os Windows_NT 10.0.26200
+43 verbose node v22.18.0
+44 verbose npm  v10.9.3
+45 notice
+45 notice New [31mmajor[39m version of npm available! [31m10.9.3[39m -> [34m11.11.0[39m
+45 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.11.0[39m
+45 notice To update run: [4mnpm install -g npm@11.11.0[24m
+45 notice  { force: true, [Symbol(proc-log.meta)]: true }
+46 verbose exit 1
+47 verbose code 1
+48 error A complete log of this run can be found in: D:\c backup\crio\OctaByte\frontend\%APPDATA%\npm-cache\_logs\2026-02-28T08_42_27_859Z-debug-0.log

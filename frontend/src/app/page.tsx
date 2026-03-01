@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import { fetchPortfolio } from "../lib/portfolioApi";
 import { formatCurrency, formatPercent } from "../lib/format";
 
